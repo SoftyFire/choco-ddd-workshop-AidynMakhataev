@@ -11,7 +11,7 @@ trait ObjectEventsTrait
         $this->events[] = $event;
     }
 
-    protected function flushEvents(): array
+    public function flushEvents(): array
     {
         $events = $this->events;
         $this->events = [];
